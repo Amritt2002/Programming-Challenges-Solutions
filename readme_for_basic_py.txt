@@ -35,7 +35,7 @@ In this section, you're explaining the use of four mathematical operators with e
 
 You're performing these operations and printing the results.
 
-Q4 - Loop and Conditional Statements
+Q5 - Loop and Conditional Statements
 Question Type: Loop and conditional statements.
 
 
@@ -47,7 +47,7 @@ You use a while loop to repeatedly add B to temp and increment count until A is 
 After the loop, you check if A is divisible by B (A % B == 0). If it is, you print that B can divide A purely and mention how many times (count) it can do so. If not, you print that B cannot divide A purely.
 
 
-Q5 - List Manipulation and Conditional Statements
+Q6 - List Manipulation and Conditional Statements
 Question Type: List manipulation and conditional statements.
 
 In this section, you're creating a list of 25 integers and using a for loop with an if-else condition to check if each element is divisible by 3.
@@ -57,3 +57,41 @@ You then calculate the length of the list and store it in the variable count.
 You use a for loop to iterate through each number in the list (num).
 Inside the loop, you use the modulo operator (%) to check if num is divisible by 3. If the remainder is 0, it means num is divisible by 3, and you print a message indicating that. Otherwise, you print "not" to indicate that it's not divisible by 3.
 So, this code prints whether each number in the list is divisible by 3 or not using a for loop and if-else condition.
+
+Q7 Q7. What do you understand about mutable and immutable data types? Give examples for both showing
+this property.
+"""Immutable Data Types:
+
+Immutable data types are those where the data cannot be changed after it is created. When you perform an operation that appears to modify an immutable data type, you're actually creating a new object with the modified value, leaving the original object unchanged.
+Examples of Immutable Data Types:
+
+Integers (int): Once an integer is assigned to a variable, it cannot be changed. Any operation that seems to change the integer results in a new integer.
+Strings (str): Strings are also immutable. Any operation that seems to modify a string creates a new string."""
+#EX:1
+x = 5  # x is assigned the integer 5
+x = x + 1  # A new integer (6) is created and assigned to x
+#EX:2
+s = "Hello"  # s is assigned the string "Hello"
+s = s + " World"  # A new string is created ("Hello World") and assigned to s
+
+"""Mutable Data Types:
+
+Mutable data types, on the other hand, can be modified in place. This means you can change their content without creating a new object.
+Examples of Mutable Data Types:
+
+Lists (list): Lists are mutable. You can modify their elements, append, remove, or change values within the same list."""
+
+#EX:1
+my_list = [1, 2, 3]
+my_list.append(4)  # Modifies the original list by adding 4
+
+#EX:2
+my_dict = {"name": "Alice", "age": 30}
+my_dict["age"] = 31  # Modifies the age value in the original dictionary
+
+
+
+
+
+
+

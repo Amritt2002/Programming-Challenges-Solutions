@@ -35,6 +35,48 @@ In this section, you're explaining the use of four mathematical operators with e
 
 You're performing these operations and printing the results.
 
+Q4 Logic explanation
+
+1. We start by creating a list called `my_list` that contains 10 elements of different data types. Here's a breakdown of the elements:
+   - Integer: `42`
+   - String: `"Hello, World!"`
+   - Float: `3.14159`
+   - Boolean: `True`
+   - List: `[1, 2, 3]`
+   - Dictionary: `{"name": "Alice", "age": 30}`
+   - None: `None`
+   - Tuple: `(4, 5, 6)`
+   - Float: `7.5`
+   - Boolean: `False`
+
+2. We use a `for` loop to iterate over each element in the `my_list`. The loop variable `item` takes on the value of each element in the list one by one.
+
+3. Inside the loop, we use the `print` function to display information about each element:
+   - We use an f-string (formatted string literal) to construct the output.
+   - `f"Element: {item}, Data Type: {type(item)}"` is the format string. It contains two placeholders `{item}` and `{type(item)}`.
+   - `{item}` is replaced with the current element in the list.
+   - `{type(item)}` is replaced with the data type of the current element, which is obtained using the `type()` function.
+
+4. The `print` function displays the element and its data type for each iteration of the loop.
+
+Here's what the output will look like:
+
+```
+Element: 42, Data Type: <class 'int'>
+Element: Hello, World!, Data Type: <class 'str'>
+Element: 3.14159, Data Type: <class 'float'>
+Element: True, Data Type: <class 'bool'>
+Element: [1, 2, 3], Data Type: <class 'list'>
+Element: {'name': 'Alice', 'age': 30}, Data Type: <class 'dict'>
+Element: None, Data Type: <class 'NoneType'>
+Element: (4, 5, 6), Data Type: <class 'tuple'>
+Element: 7.5, Data Type: <class 'float'>
+Element: False, Data Type: <class 'bool'>
+```
+
+This code demonstrates how to use a `for` loop to iterate over a list, access each element, and determine its data type using the `type()` function. It then prints this information in a human-readable format.
+
+
 Q5 - Loop and Conditional Statements
 Question Type: Loop and conditional statements.
 

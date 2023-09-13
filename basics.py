@@ -97,6 +97,38 @@ for num in l:
             print("not")
 
 
+Q7 Q7. What do you understand about mutable and immutable data types? Give examples for both showing
+this property.
+"""Immutable Data Types:
+
+Immutable data types are those where the data cannot be changed after it is created. When you perform an operation that appears to modify an immutable data type, you're actually creating a new object with the modified value, leaving the original object unchanged.
+Examples of Immutable Data Types:
+
+Integers (int): Once an integer is assigned to a variable, it cannot be changed. Any operation that seems to change the integer results in a new integer.
+Strings (str): Strings are also immutable. Any operation that seems to modify a string creates a new string."""
+#EX:1
+x = 5  # x is assigned the integer 5
+x = x + 1  # A new integer (6) is created and assigned to x
+#EX:2
+s = "Hello"  # s is assigned the string "Hello"
+s = s + " World"  # A new string is created ("Hello World") and assigned to s
+
+"""Mutable Data Types:
+
+Mutable data types, on the other hand, can be modified in place. This means you can change their content without creating a new object.
+Examples of Mutable Data Types:
+
+Lists (list): Lists are mutable. You can modify their elements, append, remove, or change values within the same list."""
+
+#EX:1
+my_list = [1, 2, 3]
+my_list.append(4)  # Modifies the original list by adding 4
+
+#EX:2
+my_dict = {"name": "Alice", "age": 30}
+my_dict["age"] = 31  # Modifies the age value in the original dictionary
+
+
  
     
 
